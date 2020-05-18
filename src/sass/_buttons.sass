@@ -1,0 +1,56 @@
+@mixin primary-button
+    font-size: 1em
+    font-family: 'bai jamjuree'
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 2px
+    text-align: center
+    border-radius: .125em
+    background-color: transparent 
+    border: 2px solid #fff
+    color: #fff
+    padding: 1.10em 3.5em
+    line-height: 1
+    -webkit-transition: all .25s ease-in-out
+    transition: all .25s ease-in-out
+
+    &:hover
+        color: $oceanblue
+        background-color: #fff
+
+
+@mixin main-card-button
+    font-weight: 500
+    letter-spacing: 2px
+    text-transform: uppercase
+    font-size: 1em
+    margin-top: auto
+    color: #f12c2c
+
+@mixin gradient-button
+    font-size: 1em
+    font-family: 'bai jamjuree'
+    font-weight: 500
+    text-transform: uppercase
+    letter-spacing: 2px
+    text-align: center
+    border: 0
+    border-radius: .125em
+    display: inline-block
+    color: $blue
+    padding: 1.10em 3.5em
+    line-height: 1
+    background: linear-gradient(90deg,$oceanblue,$blue) 0 0 no-repeat,linear-gradient(90deg,$oceanblue,$blue) 0 100% no-repeat,linear-gradient(0deg,$oceanblue,$oceanblue) 0 100% no-repeat,linear-gradient(0deg,$oceanblue,$oceanblue) 100% 100% no-repeat
+    background: -webkit-gradient(linear,left top,right top,from($oceanblue),to($blue)) 0 0 no-repeat,-webkit-gradient(linear,left top,right top,from($oceanblue),to($blue)) 0 100% no-repeat,-webkit-gradient(linear,left bottom,left top,from($oceanblue),to($oceanblue)) 0 100% no-repeat,-webkit-gradient(linear,left bottom,left top,from($blue),to($blue)) 100% 100% no-repeat
+    background-size: 100% 2px,100% 2px,2px 100%,2px 100%
+
+    &:hover
+        color: $white
+        background: linear-gradient(90deg,$oceanblue,$blue) 0 0 no-repeat,linear-gradient(90deg,$oceanblue,$blue) 0 100% no-repeat,linear-gradient(0deg,$oceanblue,$oceanblue) 0 100% no-repeat,linear-gradient(0deg,$oceanblue,$oceanblue) 100% 100% no-repeat
+        background: -webkit-gradient(linear,left top,right top,from($oceanblue),to($blue)) 0 0 no-repeat,-webkit-gradient(linear,left top,right top,from($oceanblue),to($blue)) 0 100% no-repeat,-webkit-gradient(linear,left bottom,left top,from($oceanblue),to($oceanblue)) 0 100% no-repeat,-webkit-gradient(linear,left bottom,left top,from($blue),to($blue)) 100% 100% no-repeat
+
+@mixin gradient-hover
+    &:hover
+        color: $white
+        background: linear-gradient(90deg,$oceanblue,$blue) 0 0 no-repeat,linear-gradient(90deg,$oceanblue,$blue) 0 100% no-repeat,linear-gradient(0deg,$oceanblue,$oceanblue) 0 100% no-repeat,linear-gradient(0deg,$oceanblue,$oceanblue) 100% 100% no-repeat
+        background: -webkit-gradient(linear,left top,right top,from($oceanblue),to($blue)) 0 0 no-repeat,-webkit-gradient(linear,left top,right top,from($oceanblue),to($blue)) 0 100% no-repeat,-webkit-gradient(linear,left bottom,left top,from($oceanblue),to($oceanblue)) 0 100% no-repeat,-webkit-gradient(linear,left bottom,left top,from($blue),to($blue)) 100% 100% no-repeat

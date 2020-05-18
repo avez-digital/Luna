@@ -1,0 +1,65 @@
+@mixin play-button
+    position: absolute
+    top: 0%
+    left: 0%
+    bottom: 0
+    right: 0
+    text-align: center
+    height: 100%
+    width: 100%
+    z-index: 10
+
+    &::after
+        position: absolute
+        content: "\f04b"
+        font-family: 'Font Awesome 5 Free'
+        font-weight: 900
+        display: inline-block
+        box-sizing: border-box
+        font-size: 80px
+        top: 40%
+        left: 47%
+        color: #ffffff
+        -webkit-font-smoothing: antialias    
+        opacity: .65
+        transition: all .3s ease-in-out 
+
+    &:hover::after
+        opacity: .95
+
+@mixin carousel-overlay
+    background: linear-gradient(180deg,transparent,#000 61%)
+    position: absolute
+    width: 100%
+    bottom: 0
+    border-radius: .75em
+    padding-left: 5em
+    padding-right: 5em
+    padding-bottom: 1em
+    padding-top: 1em
+
+@mixin carousel-header
+    font-family: 'Bai Jamjuree', 'sans-serif'
+    font-size: 1.25em
+    font-weight: 500
+    color: #ffffff
+    margin-block-start: 1em
+    margin-block-end: 1em
+
+@mixin carousel-footer-img
+    height: 2em
+    width: 2em
+    border-radius: 9999px
+
+@mixin carousel-footer
+    display: flex
+    align-items: center
+
+@mixin carousel-footer-text
+    font-family: 'Bai Jamjuree', 'sans-serif'
+    font-size: .875em
+    font-weight: 500
+    color: #ffffff
+    margin-block-start: 1em
+    margin-block-end: 1em
+    margin-left: .5em

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<link href="https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,500&display=swap" rel="stylesheet">
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Luna | Explore a New Realm</title>
+  <link rel="shortcut icon"  href="./media/images/favicon.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://npmcdn.com/flickity@1.2/dist/flickity.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="cflex cflex-col ch-screen cm-0 wbd-normal">
+
+                <!-- Modals -->
+<div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+  <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0 modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body mb-0 p-0">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/AGMmxnPU0cU"
+            allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="modal2" aria-hidden="true">
+  <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0 modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body mb-0 p-0">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/-qmp8JMoBB4"
+            allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="modal3" aria-hidden="true">
+  <div class="modal-dialog h-100 d-flex flex-column justify-content-center my-0 modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-body mb-0 p-0">
+        <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/6BUfCOmMolI"
+            allowfullscreen></iframe>
+          </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+      
+  <div id="App" class="font-sans relative cflex cflex-col ch-screen cmx-auto cw-100 cmax-h-3000px cmin-h-screen">
+    <div class="cflex cflex-col ch-screen cmin-h-screen cz-0 relative">
+      <header id="js-nav" class="nav-color cabsolute cz-40 cw-100 cpy-1p5 cpy-md-2p25">
+        <div class="c-container relative cflex cflex-row citems-center justify-between md-justify-start cw-100">
+          <a href="#" title="Luna - Home" class="navbar-brand">
+            <img src="/media/images/luna-logo.png" class="cd-block" alt="">
+          </a>
+        <nav class="cnavbar cflex-lg cflex-row justify-between citems-center cw-100 cml-md-2">
+          <ul class="tablet-hidden list-reset cflex cflex-row cm-0 cp-0 wbd-normal">
+            <li class="cmx-p5 cnav-item">
+              <a href="#" class="js-navItem nav-link-style nav-link-fade-up">Product</a>
+            </li>
+            <li class="cmx-p5 cnav-item">
+              <a href="#" class="js-navItem nav-link-style nav-link-fade-up">Pricing</a>
+            </li>
+            <li class="cmx-p5 cnav-item">
+              <a href="#" class="js-navItem nav-link-style nav-link-fade-up">Community</a>
+            </li>
+            <li class="cmx-p5 cnav-item">
+              <a href="#" class="js-navItem nav-link-style nav-link-fade-up">Blog</a>
+            </li>
+          </ul>
+          <div>
+            <div class="tablet-hidden clfex cflex-row citems-center">
+              <a href="#" class="cnav-item nav-link-fade-up">Sign In</a>
+              <a href="#" class="nav-button cml-md-1p5">Download</a>
+            </div>
+          </div>
+          <div class="hamburger">
+            <div class="tbun"></div>
+            <div class="mbun"></div>
+            <div class="bbun"></div>
+          </div>
+        </nav>
+      </div>
+      </header>
+      <div class="NavMobile coverflow-y-hidden ">
+        <div class="cflex cflex-col wbd-normal ch-100">
+        <nav class="c-container cflex cflex-grow cflex-shrink cflex-auto content-center cpy-2p5 coverflow-y-hidden">
+            <div class="cflex ch-100 cm-auto">
+              <ul class="list-reset cflex cflex-col cm-0 wbd-normal">
+                <li class="cmb-p75">
+                  <a href="#" class="js-nav MobileItem mobnav-item">Product</a>
+                </li>
+                <li class="cmb-p75">
+                  <a href="#" class="js-nav MobileItem mobnav-item">Pricing</a>
+                </li>
+                <li class="cmb-p75">
+                  <a href="#" class="js-nav MobileItem mobnav-item">Community</a>
+                </li>
+                <li class="cmb-p75">
+                  <a href="#" class="js-nav MobileItem mobnav-item">Blog</a>
+                </li>
+              </ul>
+            </div>
+        </nav>
+        <div class="cmt-auto cpb-1">
+          <hr class="indented-hr">
+          <div class="c-container cpt-1">
+            <a href="#" class="gradient-button-full">Sign In</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      <main role="main" class="main">
+        <section class="hero bottom-angle cpt-11 cpb-4 cpb-md-6 cpb-lg-4 relative of-hidden">
+          <div class="c-container relative cz-20">
+            <div class="cflex cflex-wrap citems-center">
+              <div class="relative cz-10 cpr-md-1p25 cw-100 cw-md-50 cnmt-lg-5">
+                <h1 class="hero-header cmy-0">Explore a New Realm</h1>
+                <div class="hero-subtext cpy-1p5">
+                  <p>Luna is an operating system for personal and small business use that brings enterprise-class
+                    features letting you configure your computer systems to maximize performance and capacity using any
+                    combination of applications, VMs,  storage devices, and hardware.</p>
+                </div> 
+                <a href="#" class="hero-button" type="button">Get The Details</a>
+              </div>
+              <div class="relative cz-0 cpl-md-1p25 cw-100 cw-md-50 cmt-3 cmt-md-0 cpl-md-1p25">
+                <div class="cflex cflex-col justify-center cw-100 relative wbd-normal">
+                  <div class="carousel js-flickity" data-flickity-options='{ "lazyLoad": true,"wrapAround": true, "prevNextButtons": false }'>
+                    <div class="carousel-cell" data-toggle="modal" data-target="#modal1">
+                      <figure class="white-shadow">
+                      <img class="img-fluid" src="./media/images/tomb-raider.png" alt="tomb raider thumbnail">
+                      <a class="pointer-play-button"></a>
+                      <div class="play-button"></div>
+                      <figcaption class="carousel-overlay">
+                        <h3 class="carousel-header">Analysis of the technology behind Shadow of the Tomb Raider</h3>
+                        <div class="carousel-footer">
+                          <img class="img-fluid" src="./media/images/digital-foundry.jpg" alt="">
+                        <p class="carousel-footer-text">Digital Foundry</p>
+                        </div>
+                      </figcaption>
+                      </figure>
+                    </div>
+                    <div class="carousel-cell" data-toggle="modal" data-target="#modal2">
+                      <figure class="white-shadow">
+                      <img class="img-fluid" src="./media/images/tlop2.png" alt="">
+                      <a class="pointer-play-button"></a>
+                      <div class="play-button"></div>
+                      <figcaption class="carousel-overlay">
+                        <h3 class="carousel-header">Deep dive into the tech demo for The Last of Us Part II</h3>
+                        <div class="carousel-footer">
+                          <img class="img-fluid" src="./media/images/digital-foundry.jpg" alt="">
+                        <p class="carousel-footer-text">Digital Foundry</p>
+                        </div>
+                      </figcaption>
+                      </figure>
+                    </div>
+                    <div class="carousel-cell" data-toggle="modal" data-target="#modal3">
+                      <figure class="white-shadow">
+                      <img class="img-fluid" src="./media/images/senuas-saga.png" alt="">
+                      <a class="pointer-play-button"></a>
+                      <div class="play-button"></div>
+                      <figcaption class="carousel-overlay">
+                        <h3 class="carousel-header">Hellblade 2 showcases the power of next-gen and the Series X</h3>
+                        <div class="carousel-footer">
+                          <img src="./media/images/digital-foundry.jpg" alt="">
+                        <p class="carousel-footer-text">Digital Foundry</p>
+                        </div>
+                      </figcaption>
+                      </figure>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+        </section>
+
+
+
+
+   <!-- Old version -->
+
+
+
+
+<section class="bg-black relative cpy-4">
+  <div class="c-container cz-20">
+    <header class="cw-100 cmb-2p5">
+      <div class="h-ruler"></div>
+      <h2 class="section-header">Customize To Your Needs</h2>
+    </header>
+    <div class="main-card-container cnmx-1">
+      <article class="main-card">
+        <a href="#" class="main-card-style">
+          <div class="mb-auto">
+            <div class="svg-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M32 2A30 30 0 1 1 2 32 30 30 0 0 1 32 2m0-2a32 32 0 1 0 32 32A32 32 0 0 0 32 0z"></path><path d="M26 44.84V19.16L45.84 32zm2-22v18.32L42.16 32z"></path>
+              </svg>
+            </div>
+            <h3 class="main-card-header">Digital Media Mavericks</h3>
+            <div class="main-card-subtext">Video producers, streamers with extensive video libraries, media editors, photographers, musicians, and music collectors use Luna to reduce their initial cost. Start with as few as two drives and scale using one or more drives at a time.
+            </div>
+          </div>
+          <span class="main-card-button">Learn More</span>
+        </a>
+      </article>
+      <article class="main-card">
+        <a href="#" class="main-card-style">
+          <div class="mb-auto">
+            <div class="svg-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M36.54 48h-9.08l-4.56-9 2-5-1-1.93 2.22-8.89 4.35-1.45L31.62 24h.76l1.11-2.22 4.35 1.45 2.22 8.89-1 1.93 2 5zm-7.86-2h6.64l3.58-7-2-5 1-2.07-1.78-7.11-1.65-.55-.85 1.73h-3.24l-.89-1.78-1.65.55-1.78 7.11 1 2.07-2 5z"></path><path d="M31 1h2v25h-2z"></path><path d="M32 2A30 30 0 1 1 2 32 30 30 0 0 1 32 2m0-2a32 32 0 1 0 32 32A32 32 0 0 0 32 0z"></path><path d="M31 29h2v4h-2z"></path></svg>
+            </div>
+            <h3 class="main-card-header">Hardcore Gamers</h3>
+            <div class="main-card-subtext">Gamers who also have media servers and like to build their own custom systems use Luna to do everything without losing their edge.
+            </div>
+          </div>
+          <span class="main-card-button">Learn More</span>
+        </a>
+      </article>
+      <article class="main-card">
+        <a href="#" class="main-card-style">
+          <div class="mb-auto">
+            <div class="svg-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M32 2A30 30 0 1 1 2 32 30 30 0 0 1 32 2m0-2a32 32 0 1 0 32 32A32 32 0 0 0 32 0z"></path><path d="M48 28H16V16h32zm-30-2h28v-8H18z"></path><path d="M48 38H16V26h32zm-30-2h28v-8H18z"></path><path d="M48 48H16V36h32zm-30-2h28v-8H18zM20 21h6v2h-6zM20 31h6v2h-6z"></path><path d="M20 41h6v2h-6z"></path></svg>
+            </div>
+            <h3 class="main-card-header">Data Storage Users</h3>
+            <div class="main-card-subtext">Designers, 3D animators, developers, photographers, and other users who require significant storage use Luna to locally store assets for fast access. Use with Apple Time Machine and Windows Backup services to archive large quantities of infrequently accessed data off of your local devices.
+            </div>
+          </div>
+          <span class="main-card-button">Learn More</span>
+        </a>
+      </article>
+      <article class="main-card">
+        <a href="#" class="main-card-style">
+          <div class="mb-auto">
+            <div class="svg-style">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><path d="M48 40H16V19h32zm-30-2h28V21H18z"></path><path d="M39 48H25V38h14zm-12-2h10v-6H27z"></path><path d="M22 46h20v2H22zM16.463 38.162l29.995-19.006 1.07 1.69-29.995 19.006z"></path><path d="M32 2A30 30 0 1 1 2 32 30 30 0 0 1 32 2m0-2a32 32 0 1 0 32 32A32 32 0 0 0 32 0z"></path></svg>
+            </div>
+            <h3 class="main-card-header">Multi-OS Users</h3>
+            <div class="main-card-subtext">Software engineers, Game development studios, AR/VR designers, and University labs use Luna to test software on multiple platforms and across operating systems and devices and allow multiple users access to a single system.
+            </div>
+          </div>
+          <span class="main-card-button">Learn More</span>
+        </a>
+      </article>
+    </div>
+    <footer class="text-center cmt-3p5">
+      <h3 class="footer-disclaimer">
+      <span class="footer-disclaimer-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><path fill="#fff" opacity=".5" d="M0 12h12V0H0z"></path> <path fill="#fff" opacity=".5" d="M4 16h12V4H4z"></path></svg>
+      </span>
+      <span>Build your Luna server however you want</span>
+    </h3>
+    <div class="footer-icons">
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>PlayStation</title><path d="M8.985 2.596v17.548l3.915 1.261V6.688c0-.69.304-1.151.794-.991.636.181.76.814.76 1.505v5.876c2.441 1.193 4.362-.002 4.362-3.153 0-3.237-1.126-4.675-4.438-5.827-1.307-.448-3.728-1.186-5.391-1.502h-.002zm4.656 16.242l6.296-2.275c.715-.258.826-.625.246-.818-.586-.192-1.637-.139-2.357.123l-4.205 1.499v-2.385l.24-.085s1.201-.42 2.913-.615c1.696-.18 3.785.029 5.437.661 1.848.601 2.041 1.472 1.576 2.072s-1.622 1.036-1.622 1.036l-8.544 3.107v-2.297l.02-.023zM1.808 18.6c-1.9-.545-2.214-1.668-1.352-2.321.801-.585 2.159-1.051 2.159-1.051l5.616-2.013v2.313L4.206 17c-.705.271-.825.632-.239.826.586.195 1.637.15 2.343-.12L8.248 17v2.074c-.121.029-.256.044-.391.073-1.938.331-3.995.196-6.037-.479l-.012-.068z"/></svg>
+      </div>
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Xbox</title><path d="M4.102 21.033C6.211 22.881 8.977 24 12 24c3.026 0 5.789-1.119 7.902-2.967 1.877-1.912-4.316-8.709-7.902-11.417-3.582 2.708-9.779 9.505-7.898 11.417zm11.16-14.406c2.5 2.961 7.484 10.313 6.076 12.912C23.002 17.48 24 14.861 24 12.004c0-3.34-1.365-6.362-3.57-8.536 0 0-.027-.022-.082-.042-.063-.022-.152-.045-.281-.045-.592 0-1.985.434-4.805 3.246zM3.654 3.426c-.057.02-.082.041-.086.042C1.365 5.642 0 8.664 0 12.004c0 2.854.998 5.473 2.661 7.533-1.401-2.605 3.579-9.951 6.08-12.91-2.82-2.813-4.216-3.245-4.806-3.245-.131 0-.223.021-.281.046v-.002zM12 3.551S9.055 1.828 6.755 1.746c-.903-.033-1.454.295-1.521.339C7.379.646 9.659 0 11.984 0H12c2.334 0 4.605.646 6.766 2.085-.068-.046-.615-.372-1.52-.339C14.946 1.828 12 3.545 12 3.545v.006z"/></svg>
+      </div>
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Steam</title><path d="M11.979 0C5.678 0 .511 4.86.022 11.037l6.432 2.658c.545-.371 1.203-.59 1.912-.59.063 0 .125.004.188.006l2.861-4.142V8.91c0-2.495 2.028-4.524 4.524-4.524 2.494 0 4.524 2.031 4.524 4.527s-2.03 4.525-4.524 4.525h-.105l-4.076 2.911c0 .052.004.105.004.159 0 1.875-1.515 3.396-3.39 3.396-1.635 0-3.016-1.173-3.331-2.727L.436 15.27C1.862 20.307 6.486 24 11.979 24c6.627 0 11.999-5.373 11.999-12S18.605 0 11.979 0zM7.54 18.21l-1.473-.61c.262.543.714.999 1.314 1.25 1.297.539 2.793-.076 3.332-1.375.263-.63.264-1.319.005-1.949s-.75-1.121-1.377-1.383c-.624-.26-1.29-.249-1.878-.03l1.523.63c.956.4 1.409 1.5 1.009 2.455-.397.957-1.497 1.41-2.454 1.012H7.54zm11.415-9.303c0-1.662-1.353-3.015-3.015-3.015-1.665 0-3.015 1.353-3.015 3.015 0 1.665 1.35 3.015 3.015 3.015 1.663 0 3.015-1.35 3.015-3.015zm-5.273-.005c0-1.252 1.013-2.266 2.265-2.266 1.249 0 2.266 1.014 2.266 2.266 0 1.251-1.017 2.265-2.266 2.265-1.253 0-2.265-1.014-2.265-2.265z"/></svg>
+      </div>
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Windows</title><path d="M0 3.449L9.75 2.1v9.451H0m10.949-9.602L24 0v11.4H10.949M0 12.6h9.75v9.451L0 20.699M10.949 12.6H24V24l-12.9-1.801"/></svg>
+      </div>
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Apple</title><path d="M7.078 23.55c-.473-.316-.893-.703-1.244-1.15-.383-.463-.738-.95-1.064-1.454-.766-1.12-1.365-2.345-1.78-3.636-.5-1.502-.743-2.94-.743-4.347 0-1.57.34-2.94 1.002-4.09.49-.9 1.22-1.653 2.1-2.182.85-.53 1.84-.82 2.84-.84.35 0 .73.05 1.13.15.29.08.64.21 1.07.37.55.21.85.34.95.37.32.12.59.17.8.17.16 0 .39-.05.645-.13.145-.05.42-.14.81-.31.386-.14.692-.26.935-.35.37-.11.728-.21 1.05-.26.39-.06.777-.08 1.148-.05.71.05 1.36.2 1.94.42 1.02.41 1.843 1.05 2.457 1.96-.26.16-.5.346-.725.55-.487.43-.9.94-1.23 1.505-.43.77-.65 1.64-.644 2.52.015 1.083.29 2.035.84 2.86.387.6.904 1.114 1.534 1.536.31.21.582.355.84.45-.12.375-.252.74-.405 1.1-.347.807-.76 1.58-1.25 2.31-.432.63-.772 1.1-1.03 1.41-.402.48-.79.84-1.18 1.097-.43.285-.935.436-1.452.436-.35.015-.7-.03-1.034-.127-.29-.095-.576-.202-.856-.323-.293-.134-.596-.248-.905-.34-.38-.1-.77-.148-1.164-.147-.4 0-.79.05-1.16.145-.31.088-.61.196-.907.325-.42.175-.695.29-.855.34-.324.096-.656.154-.99.175-.52 0-1.004-.15-1.486-.45zm6.854-18.46c-.68.34-1.326.484-1.973.436-.1-.646 0-1.31.27-2.037.24-.62.56-1.18 1-1.68.46-.52 1.01-.95 1.63-1.26.66-.34 1.29-.52 1.89-.55.08.68 0 1.35-.25 2.07-.228.64-.568 1.23-1 1.76-.435.52-.975.95-1.586 1.26z"/></svg>
+      </div>
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Android</title><path d="M24 19H0a13.6 13.6 0 0 1 2.21-6.07A11.2 11.2 0 0 1 5.87 9.4l.41-.23-2.02-3.41a.51.51 0 0 1 .17-.7.5.5 0 0 1 .69.18l2.08 3.5a12.62 12.62 0 0 1 4.84-.9 12.2 12.2 0 0 1 4.75.9l2.07-3.5a.5.5 0 0 1 .7-.17.51.51 0 0 1 .16.7L17.7 9.19l.5.28a11.38 11.38 0 0 1 3.63 3.62A14.48 14.48 0 0 1 24 19zm-7.5-4.48a1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1 1 1 0 0 0-1 1zm-11 0a1 1 0 0 0 1 1 1 1 0 0 0 1-1 1 1 0 0 0-1-1 1 1 0 0 0-1 1z"/></svg>
+      </div>
+      <div class="footer-icon">
+        <svg role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Dolby Laboratories</title><path d="M24,20.352V3.648H0v16.704H24z M18.433,5.806h2.736v12.387h-2.736c-2.839,0-5.214-2.767-5.214-6.194S15.594,5.806,18.433,5.806z M2.831,5.806h2.736c2.839,0,5.214,2.767,5.214,6.194s-2.374,6.194-5.214,6.194H2.831V5.806z"/></svg>
+      </div>
+    </div>
+    </footer>
+  </div>
+</section>
+<section class="bg-img cpy-md-9 cpy-4 relative">
+  <div class="c-container">
+    <div class="cflex cflex-wrap justify-between citems-center">
+      <div class="cw-100 cw-md-50 cw-lg-42">
+      <div class="wh-ruler"></div>
+      <h2 class="section-header cmy-0">Our Supportive Community</h2>
+      <div class="section-subtext cmt-1 cmb-2">
+        <p>Connect with some of the friendliest and most welcoming people of any server OS community. Your fellow users are always open to helping new users and empowering others to do whatever you want with your gear.</p>
+      </div>
+      <button class="btn hero-button" type="button">Meet the Community</button>
+    </div>
+    <div class="cw-100 cw-md-50 cw-lg-42 cmt-3 cmt-md-0">
+      <h3 class="forum-disclaimer">
+        <span class="forum-disclaimer-icon">
+          <svg viewBox="0 0 16 15"><path d="M0 0v11h8l4 3.178V11h4V0z"></path></svg>
+        </span>
+        <span>From the Forum</span>
+      </h3>
+      <div class="rec-card cmt-1">
+        <a href="#" class="rec-card-style cflex citems-center justify-between">
+          <div class="rec-text-img">
+            <div>
+            <p class="rec-text cw-100 cmb-1">Luna version 6.5.2 available</p>
+          </div>
+          <div class="flex-center">
+            <div class="avatar-style">
+              <div class="avatar-circle">
+                <img src="./media/images/userimage1.png" class="rec-avatar" alt="">
+              </div>
+            </div>
+            <p class="screen-name my-0">Natalie</p>
+          </div>
+        </div>
+        <div class="rec-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 2A22 22 0 1 1 2 24 22 22 0 0 1 24 2m0-2a24 24 0 1 0 24 24A24 24 0 0 0 24 0z"></path> <path d="M27.71 31.46l-1.42-1.42L32.34 24l-6.05-6.04 1.42-1.42L35.16 24l-7.45 7.46z"></path> <path d="M.75 23H33v2H.75z"></path></svg>
+        </div>
+        </a>
+      </div>
+      <div class="rec-card cw-100 cmt-1">
+        <a href="#" class="rec-card-style cflex citems-center justify-between">
+          <div class="rec-text-img">
+            <div>
+            <p class="rec-text cw-100 cmb-1">Q&amp;A with Tom Eriksen: Founder/CEO of XOT Technology and creator of Luna</p>
+          </div>
+          <div class="flex-center">
+            <div class="avatar-style">
+              <div class="avatar-circle">
+                <img src="./media/images/userimage2.png" class="rec-avatar" alt="">
+              </div>
+            </div>
+            <p class="screen-name cmy-0">EchoHeal</p>
+          </div>
+        </div>
+        <div class="rec-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 2A22 22 0 1 1 2 24 22 22 0 0 1 24 2m0-2a24 24 0 1 0 24 24A24 24 0 0 0 24 0z"></path> <path d="M27.71 31.46l-1.42-1.42L32.34 24l-6.05-6.04 1.42-1.42L35.16 24l-7.45 7.46z"></path> <path d="M.75 23H33v2H.75z"></path></svg>
+        </div>
+        </a>
+      </div>
+      <div class="rec-card cw-100 cmt-1">
+        <a href="#" class="rec-card-style cflex citems-center justify-between cflex-row">
+          <div class="rec-text-img">
+            <div>
+            <p class="rec-text cw-100 cmb-1">Luna Monthly Newsletter</p>
+          </div>
+          <div class="flex-center">
+            <div class="avatar-style">
+              <div class="avatar-circle">
+                <img src="./media/images/userimage2.png" class="rec-avatar" alt="">
+              </div>
+            </div>
+            <p class="screen-name cmy-0">EchoHeal</p>
+          </div>
+        </div>
+        <div class="rec-card-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48"><path d="M24 2A22 22 0 1 1 2 24 22 22 0 0 1 24 2m0-2a24 24 0 1 0 24 24A24 24 0 0 0 24 0z"></path> <path d="M27.71 31.46l-1.42-1.42L32.34 24l-6.05-6.04 1.42-1.42L35.16 24l-7.45 7.46z"></path> <path d="M.75 23H33v2H.75z"></path></svg>
+        </div>
+        </a>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<section class="bg-black cpy-md-30 cpy-4">
+  <div class="c-container">
+    <header class="section-header text-center">
+      <div class="h-ruler"></div>
+      <h2 class="cmy-0">The Latest Info</h2>
+    </header>
+    <div class="horizontal-scroller">
+      <article class="hs-card">
+        <a href="#" class="hs-card-style">
+          <div class="cmb-auto">
+            <h3 class="hs-card-header">
+              Help Take the Fight to COVID-19 with Athena API and #StayAtHome
+            </h3>
+            <div class="hs-card-subtext">
+              <p>Using extra Luna CPU or GPU computing power, help take the fight to COVID-19 with Athena API and #StayAtHome.</p>
+            </div>
+          </div>
+          <span class="hs-card-button">Learn More</span>
+        </a>
+      </article>
+      <article class="hs-card">
+        <a href="#" class="hs-card-style">
+          <div class="cmb-auto">
+            <h3 class="hs-card-header">
+              Luna 6.5.2
+            </h3>
+            <div class="hs-card-subtext">
+              <p>Luna 6.5.2 Release Notes</p>
+            </div>
+          </div>
+          <span class="hs-card-button">Learn More</span>
+        </a>
+      </article>
+      <article class="hs-card">
+        <a href="#" class="hs-card-style">
+          <div class="cmb-auto">
+            <h3 class="hs-card-header">
+              Top Support FAQs Answered
+            </h3>
+            <div class="hs-card-subtext">
+              <p>Luna's Top Support FAQs Answered</p>
+            </div>
+          </div>
+          <span class="hs-card-button">Learn More</span>
+        </a>
+      </article>
+    </div>
+    <footer class="text-center cpt-md-1">
+      <a href="#" class="gradient-button">View Blog</a>
+    </footer>
+  </div>
+</section>
+<!-- Page footer -->
+<footer class="bg-darkgray cpy-3 cpy-md-5p5 flex-no-shrink cz-10 realtive">
+  <div class="c-container">
+    <nav class="cflex cflex-wrap justify-between cw-100 cmb-1">
+      <ul class="list-reset cw-50 cw-md-25 cmt-0 cmb-1 cmb-md-0">
+        <h6 class="footer-header">Luna</h6>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Product</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Pricing</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Community</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Merch Shop</a>
+        </li>
+      </ul>
+      <ul class="list-reset cw-50 cw-md-25 cmt-0 cmb-1 cmb-md-0">
+        <h6 class="footer-header">Resources</h6>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Documentation</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Forum</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">App Store</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Replace Registration Key</a>
+        </li>
+      </ul>
+      <ul class="list-reset cw-50 cw-md-25 cmt-0 cmb-1 cmb-md-0">
+        <h6 class="footer-header">Company</h6>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">About</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Contact Us</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Blogs</a>
+        </li>
+        <li class="footer-link">
+          <a href="#" class="footer-link-style">Policies</a>
+        </li>
+      </ul>
+    </nav>
+    <hr class="indented-hr">
+<section class="footer-content citems-center">
+  <div id="email_signup" class="cw-100 cw-md-50 order-0 md-order-1 cmt-1p5 cmt-md-0">
+    <form class="cw-100 relative" target="_blank">
+      <div aria-hidden="true" style="position: absolute; left: -5000px;"><input type="text" name="b_4ce73a4dbebfb261481909068_7d5746a785" tabindex="-1" value=""></div>
+        <label for="exampleInputEmail1" class="email-form-header">Newsletter Sign Up</label>
+        <div class="cflex cflex-wrap">
+        <input type="email" class="email-form-style flex-1" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Adress">
+      <button type="submit" name="subscribe" class="email-form-button email-form-button-hover cw-auto">Subscribe</button>  
+    </div>  
+    </form>
+  </div>
+  <div class="social-container">
+    <ul class="list-reset cflex cflex-row citems-center justify-center md-justify-end">
+      <li>
+        <a href="#" class="social-icon-style" target="_blank" title="Luna on Reddit">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>reddit</title><path d="M46,24.61a4.64,4.64,0,0,0-7.87-3.32,24,24,0,0,0-12.2-3.58l2.6-8.17,7,1.65v.1a3.82,3.82,0,1,0,.27-1.38L28.24,8.14a.64.64,0,0,0-.77.43l-2.9,9.11A24.2,24.2,0,0,0,11.8,21.23a4.62,4.62,0,1,0-5.5,7.36,8.29,8.29,0,0,0-.15,1.5c0,6.84,8.42,12.41,18.76,12.41s18.76-5.57,18.76-12.41a8.43,8.43,0,0,0-.13-1.42A4.61,4.61,0,0,0,46,24.61ZM15.86,27.79a2.77,2.77,0,1,1,2.77,2.76A2.77,2.77,0,0,1,15.86,27.79ZM31.71,36C30.32,37.35,28.13,38,25,38h0c-3.11,0-5.3-.68-6.69-2.07a.63.63,0,0,1,0-.91.64.64,0,0,1,.92,0c1.13,1.13,3,1.68,5.77,1.68h0c2.75,0,4.64-.55,5.77-1.69a.66.66,0,0,1,.92,0A.64.64,0,0,1,31.71,36Zm-.33-5.41a2.76,2.76,0,1,1,2.77-2.76A2.77,2.77,0,0,1,31.38,30.55Z"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-icon-style" target="_blank" title="Luna on YouTube">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>youtube</title><path d="M50,15A7.48,7.48,0,0,0,42.53,7.5H7.47A7.47,7.47,0,0,0,0,15V35A7.47,7.47,0,0,0,7.47,42.5H42.53A7.48,7.48,0,0,0,50,35ZM20,33.46V14.63L34.28,24Z"></path></svg>
+        </a>
+      </li>
+      <li>
+        <a href="#" class="social-icon-style" target="_blank" title="Luna on Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50"><title>twitter</title><path d="M46.54,11.64A17.54,17.54,0,0,1,41.47,13a8.85,8.85,0,0,0,3.88-4.88,17.88,17.88,0,0,1-5.61,2.14,8.84,8.84,0,0,0-15.29,6.05,8.37,8.37,0,0,0,.23,2A25.12,25.12,0,0,1,6.46,9.12,8.83,8.83,0,0,0,9.19,20.91a8.65,8.65,0,0,1-4-1.11v.12a8.84,8.84,0,0,0,7.09,8.66,8.91,8.91,0,0,1-2.33.31,8.27,8.27,0,0,1-1.66-.16,8.84,8.84,0,0,0,8.25,6.14,17.71,17.71,0,0,1-11,3.77,18.22,18.22,0,0,1-2.1-.12A24.89,24.89,0,0,0,17,42.5C33.26,42.5,42.15,29,42.15,17.35l0-1.14A17.62,17.62,0,0,0,46.54,11.64Z"></path></svg>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="brand-container">
+    <div class="cw-113px cmx-auto cmx-md-0">
+      <a href="#" title="Luna"><img src="./media/images/luna-moon-logo.png" alt="Luna" class="cw-113px"></a>
+    </div>
+  </div>
+</section>
+<section class="footernote">
+  <p>Copyright © 2005-2020 XOT Technology, Inc.<br>
+    Luna® is a registered trademark of XOT Technology, Inc.</p>
+</section>
+  </div>
+</footer>
+  <!-- Old version end-->
+</main>
+</div>
+</div>
+
+<!-- New version end-->
+
+  <script src="/js/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="https://npmcdn.com/flickity@1.2/dist/flickity.pkgd.min.js"></script>
+  <script src="/js/app.js"></script>
+</body>
+
+</html>
